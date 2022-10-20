@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int main() {
-  printf("Hello, the C programming language!\n");
+    printf("Hello, the C programming language!\n");
 
-  return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 

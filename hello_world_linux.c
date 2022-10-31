@@ -3,19 +3,19 @@
 #include <unistd.h>
 
 int main() {
-    FILE *fp = tmpfile();
-    int fd = fileno(fp);
+  FILE *fp = tmpfile();
+  int fd = fileno(fp);
 
-    printf("Try to write to tmp file with fd %d ...\n", fd);
+  printf("Try to write to tmp file with fd %d ...\n", fd);
 
-    fprintf(fp, "Hello, the C programming language with linux!\n");
+  fprintf(fp, "Hello, the C programming language with linux!\n");
 
-    printf("Try to sleep 3 seconds\n");
+  printf("Try to sleep 3 seconds\n");
 
-    sleep(3);
-    fclose(fp);
+  sleep(3);
+  fclose(fp);
 
-    printf("Completed!\n");
+  printf("Completed!\n");
 
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }

@@ -34,7 +34,7 @@ function endup() {
 
 #### Start
 
-cd $HOME
+cd "$HOME" || exit
 
 prepare
 do_job
